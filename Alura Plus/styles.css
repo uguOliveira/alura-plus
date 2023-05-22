@@ -1,0 +1,192 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-efeito: #EC2F46;
+} 
+/* root usado para mais facilmente chamar
+os códigos de cores já utilizados anteriormente*/
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* o "*" pega todos os elementos do html */
+
+.principal {
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}/*-o text-align serve para alinhar todos elementos
+inline dentro do bloco
+
+-se for colocar imagem apenas para decorar,
+colocar a imagem em background-image, se fizer sentido,
+usar tag img */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* view height vai detectar a altura da sua pagina e usar 100% por conta do 100vh
+ que vai preencher a altura da pagina 
+ o grid columns vai dividiar em blocos com a quantidade de colunas inseridas
+ */
+ 
+ .container_botao {
+    background-color: var(--botao-azul);
+    border-radius: 6px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+ }/*padding cria o espaçamento dentro da borda,
+ já o margin faz o espaçamento pra delimitar o espaço*/
+
+ .botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+    text-decoration: none;
+ }
+
+
+ .container_aviso {
+    text-align: center;
+    font-size: 12px;
+    color: var(--cinza-secundario);
+ }
+
+ .container_titulo {
+    font-size: 28px;
+    font-weight: 700;
+ }
+
+ .container_imagem {
+    margin: 1em 0 2em 0;
+ }
+ 
+ .container_caixa {
+    margin: 0 6em;
+    
+ }
+
+ .secundario_imagem {
+    width: 80%;
+ }
+
+ .secundario {
+    align-items: center;
+    margin: 0 10em;
+ }/* chamado só por secundario ou principal por ser nomeado
+ no html com espaço ao invés de _ */
+
+ .descricao_titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+ }
+
+ .descricao_texto {
+    color: var(--cinza-secundario);
+ }
+
+ .secundario_botao {
+    display: inline-block;
+    margin-top: 1em;
+ }/*A propriedade display: inline-block em CSS é usada para definir um elemento como um bloco de nível de linha
+  com comportamento de bloco. Isso significa que o elemento será renderizado como um bloco,
+   ocupando uma linha inteira,mas permitindo que outros elementos apareçam ao lado dele, sem quebra de linha.
+ */
+
+ .container_descricao {
+    padding: 1em;
+ }
+
+ .dispositivos {
+    text-align: center;
+ }
+
+ .dispositivos_titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+ }
+
+ .dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+ }
+
+ .lista_item {
+    font-size:32px;
+    color: var(--branco-principal);
+ }
+
+ .footer {
+    text-align: center;
+ }
+
+ .footer_logo {
+    margin-top: 8em;
+ }
+
+ .footer_lista {
+    list-style-type: none;
+    margin-top: 4em;
+ }
+
+ .lista_link {
+    font-weight: 400;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    margin-right: 1em;
+    color: var(--branco-principal);
+ }
+
+ .footer_texto1 {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 2em;
+ }
+
+ .footer_texto2 {
+   color: var(--cinza-secundario);
+   font-size: 14px;
+   text-align: center;
+   font-weight: 400;
+   margin-top: 2em;
+   padding-bottom: 4em;
+   font-family: var(--fonte-principal);
+ }
+
+ .lista_link a:hover {
+   color: var(--botao-efeito);
+ }/* Mudar cor ao passar mouse sobre o link */
+
+ .lista_link a:active {
+   color: var(--botao-efeito);
+ }/* Mudar cor ao clickar sobre o link */
+
+ .container_botao:hover {
+   background-color: var(--botao-efeito)
+ }
+ 
